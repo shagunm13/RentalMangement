@@ -5,8 +5,8 @@ const NavBar = ({ selectedLocation, onLocationChange }) => {
   console.log(selectedLocation);
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-        <span className="navbar-brand text-white">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <span className="navbar-brand text-white ml-5">
           Rental Management System
         </span>
         <button
@@ -24,13 +24,13 @@ const NavBar = ({ selectedLocation, onLocationChange }) => {
         <div
           className="collapse navbar-collapse"
           id="navbarSupportedContent"
-          style={{ marginRight: 200 }}
+          style={{ marginRight: 100 }}
         >
           <ul className="navbar-nav" style={{ marginLeft: "auto" }}>
             <li className="nav-item dropdown">
-              <li className="nav-item text-light">Selected Location: </li>
+              <span className="nav-item text-white">Selected Location: </span>
               <span
-                className="dropdown-toggle text-light ml-2"
+                className="dropdown-toggle text-white ml-2"
                 id="dropdownMenu1"
                 data-toggle="dropdown"
               >

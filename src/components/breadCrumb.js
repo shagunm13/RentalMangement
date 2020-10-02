@@ -13,9 +13,7 @@ const BreadCrumb = ({ reset, category }) => {
             </li>
             {category && (
               <li className="breadcrumb-item active" aria-current="page">
-                <button type="button" className="btn">
-                  {category}
-                </button>
+                <span className="btn">{category}</span>
               </li>
             )}
           </ol>
